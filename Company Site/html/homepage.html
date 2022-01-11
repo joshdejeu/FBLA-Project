@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" href="../css/loadingscreen.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../images/logo.png">
+    <meta charset="utf-8">
+    <title>Technique | Homepage</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="loading">
+        <div class="loading_icon"></div>
+    </div>
+
+    <div class="content">
+      <header id="header" class="header" onmouseover="headerHover()" onmouseout="headerOut()">
+        <div class="header_contianer">
+          <div class="filler"></div>
+          <div class="option"><a id="a" href="../html/help.html"><p id="op7"  class="clickable_option">HELP</p></a></div>
+          <div class="option"><a id="a" href="../html/shop.html"><p id="op1"  class="clickable_option">SHOP</p></a></div>
+          <div class="option"><a id="a" href="../html/location.html"><p id="op2" class="clickable_option">LOCATIONS</p></a></div>
+          <div class="option"><a id="a" href="../html/aboutus.html"><p id="op3"  class="clickable_option">ABOUT US</p></a></div>
+          <div id="op4" class="option"></div>
+          <div id="op5" class="op" >
+              <a href="../html/homepage.html">
+                <p class="logo">technique</p>
+              </a>
+          </div>
+          <div id="op6" class="option"></div>
+
+          <div id="op8" class="option"><p class="clickable_option" onClick="document.getElementById('contacts').scrollIntoView();">CONTACT US</p></div>
+
+          <div id="op9" class="option">
+            <div class="language">
+              <div id="usaflag" class="usaflag" onClick="usaselection()"></div>
+              <div class="line_parent">
+                <div id="line" class="line_child"></div>
+              </div>
+              <div id="mexflag" class="mexflag" onClick="mexselection()"></div>
+            </div>
+          </div>
+
+          <div id="op10_container" class="option">
+            <a href="../html/shop.html">
+              <div id="op10_icon" class="cart_icon"></div>
+            </a>
+            <div id="op10" class="cart_count"><a href="../html/shop.html"><p>0</p></a></div>
+            <div id="op11" class="option"><a href="../html/shop.html"><p id="cart">CART</p></a></div>
+          </div>
+        </div>
+
+      </header>
+
+      <div class="page_top">
+        <div class="company_name_parent_container">
+          <div class="company_name_child_container">
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="word_container">
+              <p class="company_name">Tech•nique</p>
+            </div>
+
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="noun_container">
+              <p class="company_noun">noun</p>
+            </div>
+
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="definition_container">
+              <p id="definition" class="company_definition">a consumer electronics retailer located in Spinrfield, Missouri with products ranging from computer parts to new or refurbished mobile phones. visit our shop today to see what items we have in stock.</p>
+            </div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+          </div><!-- end of company name -->
+        </div><!-- end of company name container -->
+
+      </div><!-- end of page_top -->
+
+      <div class="page_middle">
+        <div class="mid_label" id="banner">Explore Our Inventory!</div>
+        <div class="mid_shop">
+
+          <div class="phones">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="phone_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label1">Mobile Phones</div>
+            </div>
+
+            <div id="shop_desc">
+              <div id="shop_item1">Refurbished Phones</div>
+              <div id="shop_item2">New Phones</div>
+              <div class="">iPhone</div>
+              <div class="">Android</div>
+              <div id="shop_item3">Gaming Phones</div>
+            </div>
+          </div>
+
+          <div class="laptops">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="laptop_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label2">Laptops</div>
+            </div>
+
+            <div id="shop_desc">
+              <div class="">MacBook</div>
+              <div class="">Lenovo</div>
+              <div class="">Dell</div>
+              <div class="">Acer</div>
+              <div class="">MSI</div>
+            </div>
+          </div>
+
+          <div class="gaming_pc">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="pc_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label3">Gaming PCs</div>
+            </div>
+
+            <div id="shop_desc">
+              <div class="">Corsair</div>
+              <div class="">Omen</div>
+              <div class="">Predator</div>
+              <div class="">Alienware</div>
+              <div class="">Intel</div>
+            </div>
+          </div>
+
+          <div class="components">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="component_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label4">Computer Components</div>
+            </div>
+
+            <div id="shop_desc">
+              <div id="shop_item4">Controllers</div>
+              <div id="shop_item5">Keyboards</div>
+              <div id="shop_item6">Monitors</div>
+              <div id="shop_item7">Storage</div>
+              <div id="shop_item8">Memory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="contacts" class="contact_container">
+        <div class=""></div>
+
+        <div class="contact_grid_item1">
+          <div class="item1_grid">
+            <div class="item1"><p id="LT">Have a question?</p></div>
+            <div class="item1"><p id="LT2">Fill out this quick email submission or go <a id="contactDirection"onClick="document.getElementById('footerOption9').scrollIntoView();">here</a > for more contact information.</p></div>
+            <div class="item2">
+              <label id="contact_label1" class="contact_labels" for="name">Name</label>
+            </div>
+            <input class="contact_inputs" id="name_input" name="name" placeholder="Your name" type="text">
+            <div class="item3">
+              <label id="contact_label2" class="contact_labels" for="email">Your Email*</label>
+              <p id="email_required" class="required"></p>
+            </div>
+            <input id="email" class="contact_inputs" name="email" placeholder="Your email address" type="text" required>
+            <div class="item4">
+              <label id="contact_label3" class="contact_labels" for="message">Your Message*</label>
+              <p id="message_required" class="required"></p>
+
+            </div>
+            <textarea id="contact_textarea" name="message" placeholder="Enter your message" required></textarea>
+            <div class="item5">
+              <button id="contact_button" type="button" name="button" onclick="contactSubmit()">Submit</button>
+            </div>
+          </div>
+        </div>
+        <script src="../javascript/contactsubmit.js"></script>
+
+
+        <div class="contact_grid_item2">
+          <img id="contact_image"src="../images/employee.jpg"alt="">
+        </div>
+
+      </div><!-- end of contacts -->
+      <footer>
+        <div id="social_media" class="grid_span1">
+          <div id="footerText1" class="social_media_text">Stay connected with us on social media!</div>
+          <a id="social_icons" class="facebook" href="https://www.facebook.com/Technique-Inc-104527218790916" target="_blank"></a>
+
+          <a id="social_icons" class="instagram" href="https://www.instagram.com/technique_inc/" target="_blank"></a>
+
+          <a id="social_icons" class="twitter" href="https://twitter.com/IncTechnique" target="_blank"></a>
+
+          <a id="social_icons" class="youtube" href="https://www.youtube.com/channel/UCJYK2iQPfQrv5PLX34L6zlQ" target="_blank"></a>
+
+        </div>
+        <div class="filler"></div>
+        <div id="footer_inner_grid" class="footer_section1">
+          <div class="filler"></div>
+          <div id="footerText2" class="footer_section_name">EXPLORE</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption1" href="../html/location.html">Our Locations</a>
+            <a id="footerOption2" href="#">Job Openings</a>
+            <a id="footerOption3" href="#">References</a>
+          </div>
+        </div>
+        <div id="footer_inner_grid" class="footer_section2">
+          <div class="filler"></div>
+          <div id="footerText3" class="footer_section_name">LINKS</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption4" href="#">Our Locations</a>
+            <a id="footerOption5" href="#">Job Openings</a>
+            <a id="footerOption6" href="#">References</a>
+          </div>
+
+        </div>
+        <div id="footer_inner_grid" class="footer_section3">
+          <div class="filler"></div>
+          <div id="footerText4" class="footer_section_name">CONTACT</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div id="footer_contact_grid" class="footer_section_content">
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/pinicon.png" alt="">
+            </div>
+            <a id="footerOption7" href="../html/location.html">Springfield, MO, 65807, US</a>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/mailicon.png" alt="">
+            </div>
+            <a id="footerOption8" onclick="sendEmail()" href="#">techniqueincorporated@gmail.com</a>
+            <script>
+            function sendEmail()
+            {
+              window.location = "mailto:techniqueincorporated@gmail.com";
+            }
+            </script>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/phoneicon.png" alt="">
+            </div>
+            <a id="footerOption9" href="#">+1 (234) 5678</a>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <div class="grid_span2">&copy 2022 Copyright Josh Dejeu</div>
+      </footer>
+    </div><!-- end of content -->
+
+    <script>
+      /* jquery to fade out loading screen and fade in page */
+      $(window).on('load',function(){
+        $(".loading").fadeOut(1000);
+        $(".content").fadeIn(1000);
+        /* get data from session */
+        var contact = "goToContact";
+        var cookie = sessionStorage.getItem("cookie");
+        /* if cookie matches Contact */
+        if(cookie==contact){
+          /* scroll into view */
+          document.getElementById('contacts').scrollIntoView();
+          /* delete that cookie after use */
+          sessionStorage.removeItem("cookie");
+          // TO CLEAR ALL
+          // sessionStorage.CLear()
+        }
+      });
+    </script>
+
+    <script src="../javascript/headerchange.js"></script>
+    <script src="../javascript/translateHome.js"></script>
+
+  </body>
+</html>

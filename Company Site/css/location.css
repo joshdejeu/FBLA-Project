@@ -1,0 +1,61 @@
+*,*::before, *::after{
+  /*  box-sizing: inherit;*/
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  background: rgba(25,25,25);
+}
+html{
+  /*box-sizing: border-box;*/
+  font-size: 100%;
+}
+.page_space{
+  height: 15vh;
+  width: 100%;
+}
+#map{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 60vh;
+  width: 60vh;
+  border: 3px solid;
+  background: url('https://www.google.com/maps/d/u/0/thumbnail?mid=1CzO3A1Dgwse-TMDfVS0NFzhDhh0');
+}
+.page_top{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left_screen{
+  border: 1px solid rgba(255,255,255,0.2);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 40% 60%;
+}
+
+.our_locations{
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 5em;
+  color: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+
+}
+
+
+.right_screen{
+
+}
+.page_middle{
+  width: 100%;
+  height: 50vh;
+}

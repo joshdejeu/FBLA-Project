@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/loadingscreen.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../images/logo.png">
+    <meta charset="utf-8">
+    <title>Technique | Homepage</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="loading">
+        <div class="loading_icon"></div>
+    </div>
+
+    <div class="content">
+      <header id="header" class="header" onmouseover="headerHover()" onmouseout="headerOut()">
+        <div class="header_contianer">
+          <div class="filler"></div>
+          <div class="option"><a id="a" href="../html/help.html"><p id="op7"  class="clickable_option">HELP</p></a></div>
+          <div class="option"><a id="a" href="../html/shop.html"><p id="op1"  class="clickable_option">SHOP</p></a></div>
+          <div class="option"><a id="a" href="../html/location.html"><p id="op2" class="clickable_option">LOCATIONS</p></a></div>
+          <div class="option"><a id="a" href="../html/aboutus.html"><p id="op3"  class="clickable_option">ABOUT US</p></a></div>
+          <div id="op4" class="option"></div>
+          <div id="op5" class="op" >
+              <a href="../html/homepage.html">
+                <p class="logo">technique</p>
+              </a>
+          </div>
+          <div id="op6" class="option"></div>
+
+          <div id="op8" class="option"><p class="clickable_option" onClick="goToContact()">CONTACT US</p></div>
+
+          <div id="op9" class="option">
+            <div class="language">
+              <div id="usaflag" class="usaflag" onClick="usaselection()"></div>
+              <div class="line_parent">
+                <div id="line" class="line_child"></div>
+              </div>
+              <div id="mexflag" class="mexflag" onClick="mexselection()"></div>
+            </div>
+          </div>
+
+          <div id="op10_container" class="option">
+            <a href="../html/shop.html">
+              <div id="op10_icon" class="cart_icon"></div>
+            </a>
+            <div id="op10" class="cart_count"><a href="../html/shop.html"><p>0</p></a></div>
+            <div id="op11" class="option"><a href="../html/shop.html"><pid="cart">CART</p></a></div>
+          </div>
+        </div>
+
+      </header>
+
+      <div class="page_top">
+        <div class="header_space"></div>
+
+        <div class="item_selction"></div>
+
+        <div class="container">
+          <div class="filler"></div>
+          <div class="shop_container">
+            <div id="inner_grid" class="phone">
+              <div class="phone">
+                <div id="product_picture" class="phone_picture1"></div>
+                <div class="filler"></div>
+                <p class="category">NEW</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div></div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture2"></div>
+                <div class="filler"></div>
+                <p class="category">NEW</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture3"></div>
+                <div class="filler"></div>
+                <p class="category">NEW</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture4"></div>
+                <div class="filler"></div>
+                <p class="category">REFURBISHED</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div></div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture5"></div>
+                <div class="filler"></div>
+                <p class="category">REFURBISHED</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture6"></div>
+                <div class="filler"></div>
+                <p class="category">GAMING</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture7"></div>
+                <div class="filler"></div>
+                <p class="category">GAMING</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="phone">
+                <div id="product_picture" class="phone_picture8"></div>
+                <div class="filler"></div>
+                <p class="category">GAMING</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+            </div>
+
+            <div id="inner_grid" class="laptop">
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture1"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture2"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture3"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture4"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture5"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture6"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture7"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="laptop">
+                <div id="product_picture" class="laptop_picture8"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+            </div>
+
+            <div id="inner_grid" class="pc">
+              <div class="pc">
+                <div id="product_picture" class="pc_picture1"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture2"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture3"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture4"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture5"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture6"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture7"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+              <div class="pc">
+                <div id="product_picture" class="pc_picture8"></div>
+                <div class="filler"></div>
+                <p class="category">CATEGORY</p>
+                <p class="product">PRODUCT NAME</p>
+                <p class="price">PRICE</p>
+                <div class="filler"></div>
+              </div>
+
+            </div>
+
+            <div id="inner_grid" class="component">
+              <div class="component1"></div>
+              <div class="component2"></div>
+              <div class="component3"></div>
+              <div class="component4"></div>
+              <div class="component5"></div>
+              <div class="component6"></div>
+              <div class="component7"></div>
+              <div class="component8"></div>
+            </div>
+          </div>
+        </div>
+        <div class="filler"></div>
+
+      </div>
+
+
+      <footer>
+        <div id="social_media" class="grid_span1">
+          <div id="footerText1" class="social_media_text">Stay connected with us on social media!</div>
+          <a id="social_icons" class="facebook" href="https://www.facebook.com/Technique-Inc-104527218790916" target="_blank"></a>
+
+          <a id="social_icons" class="instagram" href="https://www.instagram.com/technique_inc/" target="_blank"></a>
+
+          <a id="social_icons" class="twitter" href="https://twitter.com/IncTechnique" target="_blank"></a>
+
+          <a id="social_icons" class="youtube" href="https://www.youtube.com/channel/UCJYK2iQPfQrv5PLX34L6zlQ" target="_blank"></a>
+
+        </div>
+        <div class="filler"></div>
+        <div id="footer_inner_grid" class="footer_section1">
+          <div class="filler"></div>
+          <div id="footerText2" class="footer_section_name">EXPLORE</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption1" href="#">Our Locations</a>
+            <a id="footerOption2" href="#">Job Openings</a>
+            <a id="footerOption3" href="#">References</a>
+          </div>
+        </div>
+        <div id="footer_inner_grid" class="footer_section2">
+          <div class="filler"></div>
+          <div id="footerText3" class="footer_section_name">LINKS</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption4" href="#">Our Locations</a>
+            <a id="footerOption5" href="#">Job Openings</a>
+            <a id="footerOption6" href="#">References</a>
+          </div>
+
+        </div>
+        <div id="footer_inner_grid" class="footer_section3">
+          <div class="filler"></div>
+          <div id="footerText4" class="footer_section_name">CONTACT</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div id="footer_contact_grid" class="footer_section_content">
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/pinicon.png" alt="">
+            </div>
+            <a id="footerOption7" href="../html/location.html">Springfield, MO, 65807, US</a>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/mailicon.png" alt="">
+            </div>
+            <a id="footerOption8" onclick="sendEmail()" href="#">techniqueincorporated@gmail.com</a>
+            <script>
+            function sendEmail()
+            {
+              window.location = "mailto:techniqueincorporated@gmail.com";
+            }
+            </script>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/phoneicon.png" alt="">
+            </div>
+            <a id="footerOption9" href="#">+1 (234) 5678</a>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <div class="grid_span2">&copy 2022 Copyright Josh Dejeu</div>
+      </footer>
+    </div><!-- end of content -->
+
+    <script src="../javascript/cookies.js"></script>
+    <script src="../javascript/loading.js"></script>
+    <script src="../javascript/translate.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/loadingscreen.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>Our Locations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="loading">
+        <div class="loading_icon"></div>
+    </div>
+
+    <div class="content">
+      <header id="header" class="header" onmouseover="headerHover()" onmouseout="headerOut()">
+        <div class="header_contianer">
+          <div class="filler"></div>
+          <div id="op7" class="option"><p class="clickable_option"><a id="a" href="../html/help.html">HELP</a></p></div>
+
+          <div class="option"><a href="../html/shop.html"><p id="op1"  class="clickable_option">SHOP</p></a></div>
+          <div id="op2" class="option"><p class="clickable_option"><a id="a" href="../html/location.html">LOCATIONS</a></p></div>
+          <div id="op3" class="option"><p class="clickable_option"><a id="a" href="../html/aboutus.html">ABOUT US</a></p></div>
+          <div id="op4" class="option"></div>
+          <div id="op5" class="op" >
+              <a href="../html/homepage.html">
+                <p class="logo">technique</p>
+              </a>
+          </div>
+          <div id="op6" class="option"></div>
+
+          <div id="op8" class="option"><p class="clickable_option" onclick="goToContact()">CONTACT US</p></div>
+
+          <div id="op9" class="option">
+            <div class="language">
+              <div id="usaflag" class="usaflag" onClick="usaselection()"></div>
+              <div class="line_parent">
+                <div id="line" class="line_child"></div>
+              </div>
+              <div id="mexflag" class="mexflag" onClick="mexselection()"></div>
+            </div>
+          </div>
+
+          <div id="op10_container" class="option">
+            <a href="../html/shop.html">
+              <div id="op10_icon" class="cart_icon"></div>
+            </a>
+            <div id="op10" class="cart_count"><a href="../html/shop.html"><p>0</p></a></div>
+            <div id="op11" class="option"><a href="../html/shop.html"><pid="cart">CART</p></a></div>
+          </div>
+        </div>
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <script src="../javascript/headerchange.js"></script>
+      </header>
+
+      <div class="page_space"></div>
+
+      <div class="page_top">
+        <div class="left_screen">
+          <div class="filler"></div>
+          <div class="our_locations">Our Locations</div>
+          <div class="filler"></div>
+
+        </div>
+        <div class="right_screen">
+
+          <div id="map"></div>
+          <script type="module" src="../javascript/googlemaps.js"></script>
+        </div>
+      </div>
+
+      <div class="page_middle">
+
+      </div>
+
+
+      <footer>
+        <div id="social_media" class="grid_span1">
+          <div class="social_media_text">Stay connected with us on social media!</div>
+
+          <a id="social_icons" class="facebook" href="https://www.facebook.com/Technique-Inc-104527218790916" target="_blank"></a>
+
+          <a id="social_icons" class="instagram" href="https://www.instagram.com/technique_inc/" target="_blank"></a>
+
+          <a id="social_icons" class="twitter" href="https://twitter.com/IncTechnique" target="_blank"></a>
+
+          <a id="social_icons" class="youtube" href="https://www.youtube.com/channel/UCJYK2iQPfQrv5PLX34L6zlQ" target="_blank"></a>
+
+        </div>
+        <div class="filler"></div>
+        <div id="footer_inner_grid" class="footer_section1">
+          <div class="filler"></div>
+          <div class="footer_section_name">EXPLORE</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a href="#">Our Locations</a>
+            <a href="#">Job Openings</a>
+            <a href="#">References</a>
+          </div>
+        </div>
+        <div id="footer_inner_grid" class="footer_section2">
+          <div class="filler"></div>
+          <div class="footer_section_name">LINKS</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a href="#">Our Locations</a>
+            <a href="#">Job Openings</a>
+            <a href="#">References</a>
+          </div>
+
+        </div>
+        <div id="footer_inner_grid" class="footer_section3">
+          <div class="filler"></div>
+          <div class="footer_section_name">CONTACT</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div id="footer_contact_grid" class="footer_section_content">
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/pinicon.png" alt="">
+            </div>
+            <a href="../html/location.html">Springfield, MO, 65807, US</a>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/mailicon.png" alt="">
+            </div>
+            <a onclick="sendEmail()" href="#">techniqueincorporated@gmail.com</a>
+            <script>
+            function sendEmail()
+            {
+              window.location = "mailto:techniqueincorporated@gmail.com";
+            }
+            </script>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="../images/phoneicon.png" alt="">
+            </div>
+            <a href="#">+1 (234) 5678</a>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <div class="grid_span2">&copy 2022 Copyright Josh Dejeu</div>
+      </footer>
+    </div><!-- end of content -->
+
+    <script src="../javascript/cookies.js"></script>
+    <script src="../javascript/loading.js"></script>
+    <script src="../javascript/translate.js"></script>
+
+  </body>
+</html>

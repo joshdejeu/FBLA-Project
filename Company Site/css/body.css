@@ -1,0 +1,124 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.page_top{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,.7) 100%), url("../images/warehouse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;/*i changed this to vh instead of %, change back if there is error*/
+}
+.company_name_parent_container{
+  position: relative;
+  height: 80vh;
+}
+.company_name_child_container{
+  color: white;
+  min-height: 400px;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 15fr 2fr 3fr 1fr 9fr;
+}
+.fake_space{
+}
+.company_name{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 5em;
+  letter-spacing: 5px;
+}
+.company_definition{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+  position: relative;
+}
+.company_noun{
+  font-family: 'Nunito Sans';
+  font-size: 2.5em;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.page_middle{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,.8) 100%), url("../images/warehouse2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mid_label{
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Hurme', sans-serif;
+  background: rgba(255, 171, 25,0.5);
+  backdrop-filter: blur(2px);
+  color: white;
+  width: 100%;
+  height: 15%;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,.5) ;
+}
+
+.mid_shop{
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.mid_shop>div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr 3fr;
+}
+#shop_picture_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop_picture{
+  width: calc(25vw + 10vh);
+  height: calc(25vw + 10vh);
+  max-width: 15vw;
+  max-height: 15vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 15px 0px black;
+  border-radius: 5px;
+}
+#shop_price,#shop_desc{
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+#shop_price{
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#shop_desc{
+  font-size: 1.5em;
+  color: rgba(240,240,240,0.8);
+  line-height: 4vh;
+}
+.phone_picture{
+  background: url('../images/phone.jpg');
+  background-position: center;
+}
+.laptop_picture{
+  background: url('../images/laptop.jpg');
+  background-position: center;
+}
+.component_picture{
+  background: url('../images/components.jpg');
+  background-position: center;
+}
+.pc_picture{
+  background: url('../images/pc.jpg');
+  background-position: bottom;
+}

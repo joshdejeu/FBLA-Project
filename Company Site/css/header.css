@@ -1,0 +1,128 @@
+*{
+  margin: 0px;
+}
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*height: 100%; NOTE: when height is defined, window.scrollY is always 0, no header change*/
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+header{
+  background: rgba(255,255,255,0);
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+header:hover{
+  background: white;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
+a:link{
+  color: inherit;
+}
+@font-face { font-family: Midnight; src: url('../fonts/The_Star_in_the_Midnight.ttf'); }
+@font-face { font-family: Midnight2; font-weight: bold; src: url('../fonts/The_Star_in_the_Midnight.ttf');}
+
+
+@font-face { font-family: Hurme; src: url('../fonts/HurmegeometricSans1.otf'); }
+@font-face { font-family: Hurme; font-weight: bold; src: url('../fonts/HurmegeometricSans1.otf');}
+.header_contianer{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr repeat(11, 3fr) 1fr;
+  grid-template-rows: 100%;
+  position: relative;
+  z-index: 5;
+}
+.option{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Hurme';
+  font-size: calc(0.4vw + 7px);
+  text-decoration: underline;
+  position: relative;
+}
+.op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.logo{
+  font-family: 'Midnight';
+  font-size: calc(5vw + 17px);
+  z-index: 3;
+  margin-top: 0.7vw;
+}
+.language{
+  display: flex;
+}
+.usaflag{
+  background: url('../images/usaflag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 3vw;
+  height: calc(3vw * 0.56);
+  cursor: grab;
+  opacity: 100%;
+}
+.line_parent{
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line_child{
+  width: 2px;
+  height: 80%;
+  background: rgba(255,255,255,0.7);
+}
+.mexflag{
+  background: url('../images/mexflag.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 3vw;
+  height: calc(3vw * 0.56);
+  cursor: grab;
+  opacity: 30%;
+}
+.clickable_option{
+  cursor: grab;
+}
+#op9{
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+#op10_container{
+  color: white;
+}
+#op10_icon,#op10, #op11{
+  cursor: grab;
+}
+#op10_icon{
+  filter: brightness(100%);
+}
+.cart_icon{
+  background: url('../images/cart.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+#op10_container{
+  display: flex;
+  justify-content: space-around;
+}

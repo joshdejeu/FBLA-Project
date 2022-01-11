@@ -1,0 +1,128 @@
+.contact_container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(50,50,50);
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+}
+#contact_image{
+  width: 30vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+}
+.contact_grid_item1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_grid_item2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root{
+  --ff: rgba(255,255,255,0.2);
+  --caret-color: black;
+}
+.item1,.item2,.item3,.item4,.item8,.item5{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.item5{
+  margin-top: 5%;
+}
+#LT{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3em;
+  color: rgba(255,255,255,1);
+  margin-top: 20%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+#LT2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  color: rgba(255,255,255,0.5);
+  width: 100%;
+  margin-bottom: 10%;
+}
+#contactDirection{
+  text-decoration: underline;
+  cursor: grab;
+}
+#contactDirection:hover{
+  color: rgba(255,255,255,0.7);
+}
+#contactDirection:active{
+  color: rgba(255,255,255,0.9);
+}
+.contact_labels{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.3em;
+  color: rgba(255,255,255,1);
+  width: 100%;
+}
+.contact_inputs{
+  border: none;
+  height: 6%;
+  width: 60%;
+  min-width: 30%;
+  padding: 0px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow:  0px 0px 5px 0px black;
+  outline: none;
+  caret-color: var(--caret-color);
+  margin-bottom: 5%;
+}
+#email{
+  outline: 1px dashed #fc3408;
+}
+#contact_textarea{
+  border: none;
+  padding: 10px 15px;
+  height: 10%;
+  width: 60%;
+  min-width: 30%;
+  max-width: 80%;
+  min-height: 10%;
+  max-height: 20%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow:  0px 0px 5px 0px black;
+  outline: none;
+  caret-color: var(--caret-color);
+  outline: 1px dashed #fc3408;
+}
+
+#contact_button{
+  background: rgba(230,230,230,0.7);
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: black;
+  box-shadow:  0px 0px 5px 0px black;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+#contact_button:hover{
+  background: rgb(150,150,150);
+}
+#contact_button:active{
+  background: rgb(120,120,120);
+}
+.item1_grid{
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: block;
+  justify-content: center;
+}
+.required{
+  color: #fc3408;
+  font-family: sans-serif;
+}
